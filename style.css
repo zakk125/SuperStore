@@ -1,0 +1,178 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: #e3e7e8;
+}
+.page a {
+    font-family: "Kanit", sans-serif;
+    color: #1f1f1f;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+p{
+    font-family: "Kanit", sans-serif;
+    padding: 13px;
+}
+
+.address ul{
+    font-family: "Kanit", sans-serif;
+    padding-left: 30px;
+}
+
+.address ol{
+    font-family: "Kanit", sans-serif;
+    padding-left: 45px;
+}
+
+.navbar {  
+    align-items: center;
+    background-color: #1f1f1f;
+    border: 1px solid white;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden; 
+    justify-content: space-evenly;
+}
+
+.navbar a{
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+} 
+
+.active, .navbar a:hover  {
+    background-color: none;
+    color: #656363;
+}
+
+.name a {
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    padding-right:90%;
+    text-decoration: none;
+    background: #1f1f1f;
+    color: white;
+}
+
+.box a {
+    font-family: "Kanit", sans-serif;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+
+.box p {
+    font-family: "Kanit", sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+}
+
+.box table td tr{
+    background-color: #1f1f1f;
+}
+
+td {
+    font-family: "Kanit", sans-serif;
+    color: rgb(200, 0, 0);
+    font-size: 17px;
+}
+
+tr {
+    height: 40px;
+}
+
+.boxcard {
+	background: #ffffff;
+	border-radius: 20px;
+	color: white;
+	padding: 20px;
+	text-align: center;
+    width: 60% ;
+}
+
+.boxcard p{
+    color: #000000;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menu{
+    font-family: "Kanit", sans-serif;
+    height:110%;
+    width: 200px;
+    position: absolute;
+    background-color: #fff;
+    transition: 0.5s ease;
+    transform: translateX(-200px);
+}
+h1{
+    color: #444444;
+    font-weight: 400;
+    text-align: right;
+    padding: 2px 0;
+    padding-right: 80px;
+    pointer-events: none;
+}
+
+ul li{
+    font-family: "Kanit", sans-serif;
+    list-style: none;
+}
+
+ul li a{
+    color: #000000;
+    padding: 6px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+ul li:hover a{
+    color: #ff0000;
+    background-color: none;
+}
+
+ul li a i{
+    width: 15px;
+    text-align: center;
+}
+
+input{
+    display: none;
+    visibility: hidden;
+}
+
+.tog{
+    border-radius: 2px;
+    color: #7e7e81;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    left: 15px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+input:checked ~ .menu{
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transform: translateX(0);
+}
+.box img:hover .image {
+	opacity: 0.5;
+}  
+
+.box img{
+	transition: 1s ;
+}
+.box img:hover{
+	transform: scale(1.1)
+}
